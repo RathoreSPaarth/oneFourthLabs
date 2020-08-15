@@ -2,7 +2,8 @@ let txt = document.querySelector('#txt')
 let btn = document.querySelector('#btn')
 
 btn.addEventListener('click',()=>{
-    axios.get('//www.omdbapi.com/?apikey=b186daa5&s='+txt.value, {
+    fetch('//xlit.quillpad.in/quillpad_backend2/processWordJSON?lang=hindi&inString='+txt.value, {
+        method: 'GET',
         headers:{
             'Access-Control-Allow-Origin' : '*'
         } 
