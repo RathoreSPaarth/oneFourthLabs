@@ -2,8 +2,7 @@ let txt = document.querySelector('#txt')
 let btn = document.querySelector('#btn')
 
 btn.addEventListener('click',()=>{
-    fetch('http://xlit.quillpad.in/quillpad_backend2/processWordJSON?lang=hindi&inString='+txt.value, {
-        method: 'GET',
+    fetch('//xlit.quillpad.in/quillpad_backend2/processWordJSON?lang=hindi&inString='+txt.value, {
         headers:{
             'Access-Control-Allow-Origin' : '*'
         } 
