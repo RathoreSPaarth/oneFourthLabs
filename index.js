@@ -2,8 +2,7 @@ let txt = document.querySelector('#txt')
 let btn = document.querySelector('#btn')
 
 btn.addEventListener('click',()=>{
-    fetch('//www.omdbapi.com/?apikey=b186daa5&s='+txt.value, {
-        method: 'GET',
+    axios.get('//www.omdbapi.com/?apikey=b186daa5&s='+txt.value, {
         headers:{
             'Access-Control-Allow-Origin' : '*'
         } 
